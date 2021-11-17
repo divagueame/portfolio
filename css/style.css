@@ -36,27 +36,32 @@
     position: absolute;
     z-index: 2;
     /* right: 0; */
-    left: calc(100% - 3.5rem);
-    top: .5rem;
+    /* left: calc(100% - .75rem); */
+    top: -.75rem;
+    
     padding: .75rem;
     border-radius: 50%;
     /* background-color: rgba(173, 173, 173, 0.651); */
     /* padding-right: 1.5rem; */
+    top: 0;
+    text-align: center;
+    /* padding:0; */
+    right: 0;
+    /* left: 100% */
   }
 
   .menu-btn span {
     position: relative;
     display: block;
-    /* width: 100%; */
-    height: 4px;
+    /* width: 100%; */ 
+    /* total height 1.5rem */
+    height: 0.222rem;
     width: 1.5rem;
-    margin-bottom: 5px;
+    margin-bottom: 0.278rem;
     background: #ffffff;
     border-radius: 3px;
     z-index: 1;
-    /* transform: scale(1); */
     opacity: 1;
-    /* transform-origin: 4px 0px;  */
     transition: all 0.3s cubic-bezier(0.77,0.9,0.05,1.0)
   }
   .menu-btn:hover {
@@ -108,7 +113,8 @@
     height: 100%;
     font-size: 2rem;
     /* background: #000; */
-    clip-path: circle(1.5rem at calc(100% - 2rem) 2rem);
+    /* clip-path: circle(1.5rem at calc(100% - 2rem) 2rem); */
+    clip-path: circle(1.3rem at calc(100% - 1.5rem) 1.35rem);
     transition: all 0.3s ease-in-out;
   }
   
