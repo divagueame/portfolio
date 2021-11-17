@@ -161,13 +161,13 @@
     align-items: center;
     text-align: center;
     scroll-snap-align: start;
-    /* scroll-padding: 100px; */
   }
 
   .page-front {
     background-color: #8A7968;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
   }
   .page-about {
     
@@ -185,67 +185,57 @@
     background-color: #596392;
   }
 
-  .profile-pic {
-    width: 3rem;
-    height: auto;
-    border-radius: 3px;
-  }
+
 /* FRONT */
-.blob {
-  /* position: relative; */
-  bottom: -20%;
-  left: 50%;
-  right: auto;
-  /* background-color: rgb(230, 159, 159); */
-	border-radius: 50%;
-  text-align: center;
-	margin: 10px;
-	height: 20px;
-	width: 20px;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-	animation: pulse 2s infinite;
-  z-index: 0;;
-  
+.arrow-wrapper {
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  animation: pulse 1.2s infinite;
+  margin-top:auto;
+  /* margin-bottom: 2rem; */
+  /* justify-self: flex-end  ; */
 }
-.arrow1 {
+.arrow-wrapper:hover {
+  border: 3px solid rgb(85, 85, 85);
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.arrow {
   background-image: url("../img/arrow.svg");
   filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(334deg) brightness(102%) contrast(105%);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
-  width: 100px;
-  height: 100px;  
+  width: 100%;
+  height: 100%;
+  transform: scale(.35);
+  display: block;
 }
 
-  .arrow {
-    width: 2rem;
-    height: 2rem;
-    background: transparent;
-    border-top: .31rem solid white;
-    border-right: .31rem solid white;
-    box-shadow: 0 0 0 lightgray;
-    transition: all 200ms ease;
-    
-		transform:
-    /* translate3d(0,-50%,0) */
-    rotate(135deg);
-  }
-  
+ 
+/* ABOUT */
+.profile-pic {
+  width: 3rem;
+  height: auto;
+  border-radius: 3px;
+}
 
   @keyframes pulse {
     0% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+      /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); */
     }
   
     70% {
       transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+      /* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); */
     }
   
     100% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); */
     }
   }
 
