@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 :root {
   --main: #cabac8;
   --dark1: #254E70;
@@ -9,10 +9,11 @@
   --light-blue: #88a2aa;
   --transparent: #33333348;
   font-size: 18px;
+  letter-spacing: 0.1rem;
   }
 * {
   font-family: 'Fira Sans', sans-serif;
-  font-family: 'Coiny', sans-serif;
+  font-family: 'Calistoga', cursive;
     margin: 0;
     box-sizing: border-box;
     color: white
@@ -28,6 +29,8 @@
     display: none;
     background-color: rgb(119, 119, 19);
   }
+
+  /* Mobile menu button */
   input[type="checkbox"]{
     display: none
   }
@@ -35,26 +38,17 @@
   .menu-btn {
     position: absolute;
     z-index: 2;
-    /* right: 0; */
-    /* left: calc(100% - .75rem); */
     top: -.75rem;
-    
     padding: .75rem;
     border-radius: 50%;
-    /* background-color: rgba(173, 173, 173, 0.651); */
-    /* padding-right: 1.5rem; */
     top: 0;
     text-align: center;
-    /* padding:0; */
     right: 0;
-    /* left: 100% */
   }
 
   .menu-btn span {
     position: relative;
     display: block;
-    /* width: 100%; */ 
-    /* total height 1.5rem */
     height: 0.222rem;
     width: 1.5rem;
     margin-bottom: 0.278rem;
@@ -150,4 +144,51 @@
       display: none;
     }
     
+    .menu {
+      /* display: none; */
+      position: relative;
+      background-color: var(--dark1);
+      top: 0rem;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: unset;
+      font-size: 2rem;
+      /* background: #000; */
+      /* clip-path: circle(1.5rem at calc(100% - 2rem) 2rem); */
+      /* clip-path: circle(1.3rem at calc(100% - 1.5rem) 1.35rem); */
+      clip-path: circle(75%);
+      transition: all 0.3s ease-in-out;
+      font-size: 1rem;
+    }
+     
+    .menu ul {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: stretch;
+      /* width: 100%; */
+      top: 0%;
+      height: 6rem;
+      left: 0%;
+      text-align: center;
+      list-style: none;
+      padding-inline-start: 0;
+      transform: translate(0%, 0%);
+    }
+
+    .menu ul li {
+      background-color: rgb(108, 125, 146);
+      padding: .3rem;
+      margin-left: 3rem;
+      /* background-color: white; */
+      /* border: 3px blue solid; */
+      border-radius: 3px;
+      margin-top: 0rem;
+      /* background-color: violet; */
+      border-bottom: 0px solid white;
+    }
+    .menu ul li:hover {
+      border: solid 0px
+    }
   }
