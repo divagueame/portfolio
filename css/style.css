@@ -140,7 +140,11 @@
     transition: all 100ms ease;
   }
 
-
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
   section {
     /* background-color: rgb(177, 145, 177); */
     height: 100vh;
@@ -148,6 +152,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    scroll-snap-align: start;
   }
 
   .page-front {
