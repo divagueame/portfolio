@@ -144,6 +144,10 @@
   section {
     /* background-color: rgb(177, 145, 177); */
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .page-front {
@@ -152,6 +156,8 @@
   .page-skills {
     background-color: #DDE8B9;
   }
+
+
   @media only screen and (min-width: 768px) {
     .menu-btn {
       display: none;
