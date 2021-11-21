@@ -245,7 +245,7 @@
   height: 2px;
   width: calc(100% + var(--padding));
   left: calc(var(--padding)* -1);
-  bottom: 0px;
+  bottom: -3px;
   background-color: rgb(177, 177, 177);
 }
 
