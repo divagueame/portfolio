@@ -186,6 +186,7 @@
     background-color: #92998f;
     height: auto;
     min-height: 100vh;
+    position: relative;
     /* opacity: 0.6; */
     /* background-image: radial-gradient(circle at center center, #ffffff, #4e2286), repeating-radial-gradient(circle at center center, #ffffff, #ffffff, 17px, transparent 34px, transparent 17px); */
     /* background-blend-mode: multiply; */
@@ -194,6 +195,27 @@
     /* align-items: center; */
   }
 
+  .projects-gallery {
+    background-color: rgba(0, 0, 0, 0.315);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+  }
+
+  .projects-gallery-card {
+    
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 43%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
   .projects-container {
     margin: 0 30px;
     padding: .5rem 0;
@@ -201,10 +223,11 @@
     grid-template-columns: 1fr;
     column-gap: 2rem;
     row-gap: 2.5rem;
+    /* background-color: chartreuse; */
   }
 /* Fancy card */
 .project-card {
-  background-color: #e5b769;
+  /* background-color: #e5b769; */
   border-radius: .15rem;
   /* min-height: 250px; */
   min-width: 10rem;
@@ -237,6 +260,7 @@
   width: max-content;
   /* background-color: var(--dark1); */
   font-size: 1.3rem;
+  margin-bottom: .3rem;
 }
 
 .project-card-title::after {
