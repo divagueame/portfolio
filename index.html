@@ -3,7 +3,13 @@
   <head>
     
     <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
-  
+    
+    
+      <!-- Our project just needs Font Awesome solid + brand -->
+  <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.min.js"></script>
+  <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.min.js"></script>
+  <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
@@ -20,7 +26,7 @@
     <!-- Menu -->
     <div class="menu">
       <ul>
-        <li class="menu-item"><a href="#page-home">Home</a></li>
+        <li class="menu-item" id="menu-item-home"><a href="#page-home">Home</a></li>
         <li class="menu-item"><a href="#page-about">About me</a></li>
         <li class="menu-item"><a href="#page-skills">Skills</a></li>
         <li class="menu-item"><a href="#page-projects">Projects</a></li>
@@ -33,11 +39,8 @@
 
     <div class="container">
         <!-- About me -->
-      <section class="page-front" id="page-home">
-        <div class="hiddenDiv"></div>
-        <!-- <div class="blob"></div> -->
-        <!-- <p>Hi! This is Martin. I am a web developer and I want to work with you!</p> -->
-        <h1>Hi! This is Martin. I am a web developer and I want to work with you!</h1>
+      <section class="page-front" id="page-home"> 
+         <h1>Hi! This is Martin. I am a web developer and I want to work with you!</h1>
         <a href="#page-about" class="arrow-wrapper">
           <span class="arrow"></span>
         </a>
@@ -50,20 +53,142 @@
       <!-- Skills -->
       <section class="page-about" id="page-about">
         About
-        <img src="img/profile-pic.jpg" class="circle profile-pic">
+        <!-- <img src="img/profile-pic.jpg" class="circle profile-pic"> -->
       </section>
 
       <!-- Skills -->
       <section class="page-skills" id="page-skills">
         Skills
+                  
+        <div class="card" id="card-palabras">
+          <div class="card-content">
+            <h2 class="card-title">Spanish Vocabulary Game</h2>
+            <p class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ratione quae recusandae! Excepturi, enim quibusdam natus ducimus consequatur explicabo consectetur? lorem400</p>
+            <a class="more-info-button" href="#">More</a>
+          </div>
+        </div> 
+
+        <div class="card" id="card-palabras">
+          <div class="card-content">
+            <h2 class="card-title">Spanish Vocabulary Game</h2>
+            <p class="card-body">Lorem ipsum duatur explicabo consectetur? lorem400</p>
+            <a class="more-info-button" href="#">More</a>
+          </div>
+        </div> 
+
+
       </section>
       
       <!-- Projects -->
-      <section  class="page-projects" id="page-projects">Projects</section>
+      <section  class="page-projects" id="page-projects">
+        
+        <div class="projects-container">
+          
+          <div class="project-card" id="card-iptracker">
+            <div class="project-card-content">
+              <h2 class="project-card-title">Ip Tracker</h2>
+              <div class="project-card-body">Lorem ipsum dolor sit amet deleniti!</div>
+              <a class="project-card-btn" href="#">More</a>
+            </div>
+          </div>
+
+          
+          <div class="project-card" id="card-iptracker">
+            <div class="project-card-content">
+              <h2 class="project-card-title">Chess</h2>
+              <p class="project-card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, deleniti!</p>
+              <a class="project-card-btn" href="#">More</a>
+            </div>
+          </div>
+
+          <div class="project-card" id="card-stingy">
+            <div class="project-card-content">
+              <h2 class="project-card-title">Stingy</h2>
+              <p class="project-card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit earum quasi ea corrupti ipsa aperiam placeat est voluptate cumque dolore.</p>
+              <a class="project-card-btn" href="#">More</a>
+            </div>
+          </div>
+
+          <div class="project-card" id="card-palabras">
+            <div class="project-card-content">
+              <h2 class="project-card-title">Vocab game</h2>
+              <p class="project-card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quae quia ex repudiandae corporis? Sed vero quod ex molestias iure corrupti, quo aspernatur quaerat debitis, laborum voluptatem porro explicabo rem?</p>
+              <a class="project-card-btn" href="#">More</a>
+            </div>
+          </div>
+          
+          <!-- <div class="card" id="card-palabras">
+            <div class="card-content">
+              <h2 class="card-title">Spanish Vocabulary Game</h2>
+              <p class="card-body">Lorem ipsum dolorlorem400</p>
+              <a class="more-info-button" href="#">More</a>
+            </div>
+          </div> 
+
+          <div class="card" id="card-stingy">
+            <div class="card-content">
+              <h2 class="card-title">Shared bills app</h2>
+              <p class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ratione quae recusandae! Excepturi, enim quibusdam natus ducimus consequatur explicabo consectetur? lorem400</p>
+              <a class="more-info-button" href="#">More</a>
+            </div>
+          </div> 
+
+          <div class="card" id="card-iptracker">
+            <div class="card-content">
+              <h2 class="card-title">IP Based Location Tracker</h2>
+              <p class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ratione quae recusandae! Excepturi, enim quibusdam natus ducimus consequatur explicabo consectetur? lorem400</p>
+              <a class="more-info-button" href="#">More</a>
+            </div>
+          </div>
+          
+          <div class="card" id="card-room">
+            <div class="card-content">
+              <h2 class="card-title">Furniture Online Shop</h2>
+              <p class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ratione quae recusandae! Excepturi, enim quibusdam natus ducimus consequatur explicabo consectetur? lorem400</p>
+              <a class="more-info-button" href="#">More</a>
+            </div>
+          </div>
+          
+          <div class="card" id="card-chess">
+            <div class="card-content">
+              <h2 class="card-title">Console Chess Game</h2>
+              <p class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ratione quae recusandae! Excepturi, enim quibusdam natus ducimus consequatur explicabo consectetur? lorem400</p>
+              <a class="card-button" href="#">More</a>
+            </div>
+          </div> -->
+          
+        </div>
+
+        
+          
+        <!-- <div class="projects-container3d">
+          <div class="isometric-card-wrapper">
+            <div>Projects</div>
+            <div class="isometric-card">
+              <div class="project-card-title">Stingy</div>
+              <div class="project-card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil reiciendis quae facilis dolore molestiae error, eveniet, iusto saepe a excepturi, velit id! Laudantium, et dolore. Error repudiandae facilis cupiditate consequatur.</div>
+            </div>
+            <div class="isometric-card">Chess</div>
+            <div class="isometric-card">Vocab game</div>
+            <div class="isometric-card">Room</div>
+          </div>
+        </div> -->
+       
+          
+          
+        
+
+
+      </section>
 
 
       <!-- Resume -->
-      <section  class="page-resume" id="page-resume">Resume</section>
+      <section  class="page-resume" id="page-resume">
+        <div class="resume-btn-wrapper">
+          <div class="resume-btn">Get my Resume here</div>
+        </div>
+        
+      </section>
 
       <!-- Contact -->
       <section  class="page-contact" id="page-contact">Contact</section>
