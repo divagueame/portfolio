@@ -5,3 +5,9 @@ projectCards.forEach(projectCard=>{
   let cardsize = projectCard.offsetHeight - 55;
   projectCard.style.transform = `translateY(${cardsize}px)`;
 })
+
+
+function reportWindowSize() {
+  console.log(window.innerWidth,window.innerHeight)
+}
+window.onresize = reportWindowSize;

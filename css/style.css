@@ -217,14 +217,30 @@
     transform: translate(-50%, -50%);
   }
   .projects-container {
+    --projectsPadding: .5rem;
     margin: 0 30px;
-    padding: .5rem 0;
+    padding: var(--projectsPadding) 0;
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 2rem;
     row-gap: 2.5rem;
-    /* background-color: chartreuse; */
+    background-color: chartreuse;
+    position: relative;
+    /* overflow: hidden; */
   }
+.project-info-card {
+  background-color: rgba(127, 255, 212, 0.521);
+  /* grid-area: 1 / 1 / 4 / 2; */
+  position: absolute;
+  left: 0px;
+  right: 0;
+  top: 4rem ;
+  bottom: 0;
+  /* width: auto; */
+  /* height: auto; */
+  z-index: 100;
+  /* transform: translate( 50% 50%); */
+}
 /* Fancy card */
 .project-card {
   /* background-color: #e5b769; */
@@ -305,6 +321,11 @@
 #card-room {background-image: url('../img/projects/room.jpg');
 }
 #card-chess {background-image: url('../img/projects/chess.jpg');
+}
+
+/* PROJECT INFO CARD */
+.project-info-card {
+  /* background-color: #e5b769; */
 }
 
 /* ORIGINAL CARD */
