@@ -189,15 +189,15 @@
 
 
 .projects-container {
-  margin: 0;
+  margin: 0 auto;
   padding: .5rem;
-  background-color: aquamarine;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  /* background-color: aquamarine; */
+  display: block;
+  /* grid-template-rows: 1fr; */
+  /* grid-template-columns: 1fr; */
   /* row-gap: .5rem; */
   position: relative;    
-  grid-row-gap: .5rem;
+  /* grid-row-gap: .5rem; */
 }
 .project-info-card {
   --project-info-card-margin: 2rem;
@@ -446,8 +446,10 @@
   /* min-height: 20%; */
   /* max-height: 3rem; */
   border-radius: .15rem;
-  height: 100px;
-  width: 100px;
+  height: 30vh;
+  width: 90vw; 
+  margin: 0 auto;
+  margin-bottom: .5rem;
   overflow: hidden;
   background-size: cover;
   position: relative;
@@ -640,84 +642,7 @@
 
 
 
-/* LAME CARD */
-  .project-cards {
-    /* flex: 0 1 33%; */
-    background-color: #fcfcfc;
-    border-radius: 5px;
-    margin: 5px;
-  }
-  
 
-  .projects-container3d {
-    /* width: 300px; */
-    flex-basis:40%;
-    background-color: #ffc46ca6;
-  }
-
-  .isometric-card-wrapper{
-    background-color: rgb(73, 45, 45, 1);
-    /* display:block; */
-    transform:
-    rotateX(55deg)
-    rotateZ(30deg);
-    /* translateX(150%); */
-    transform-style: preserve-3d;
-    /* color: rgb(223, 0, 0); */
-    /* padding: 1rem; */
-    /* z-index: 1; */
-    /* transform-origin: 10% 100% 20%; */
-    will-change: transform;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch
-  }
-
-  .isometric-card {
-    color: black;
-    /* position: absolute; */
-    /* margin: 1rem auto; */
-    padding: 1.42rem;
-    
-    background-color: #fcfcfc;
-    
-    border-radius: .2rem;
-    padding: .51rem;
-    
-    /* box-shadow: */
-      /* 1px 1px 0 1px #f9f9fb, */
-      /* -1px 0 28px 0 rgba(34, 33, 81, 0.01), */
-      /* 28px 28px 28px 0 rgba(34, 33, 81, 0.25); */
-    /* transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow; */
-    /* z-index:211 */
-  }
-
-  .isometric-card-title {
-    font-size: 2rem;
-    color:#a19372
-      }
-
-      
-  .isometric-card-content {
-    font-size: 1.2rem;
-    color:#eca400
-      }
-
-  .isometric-card:hover {
-    cursor: pointer;
-    /* background-color: khaki; */  
-    /* transform: translateZ(10%); */
-    transform:
-
-    rotateZ(-20deg)
-    rotateX(-35deg)
-    translateY(-10px)
-    /* translateZ(10%) */
-    /* scale(12.3); */
-    /* z-index: 999; */
-  }
   .page-resume {
     background-color: #6d3d3d;
     /* height: 30vh; */
@@ -925,7 +850,12 @@
   }
 
 
+  
   .projects-container {
+    margin: unset;
+    padding: unset;
+    /* background-color: rgb(103, 139, 127); */
+    
     margin: 0 20%;
     padding-top: 3.5rem;
     display: grid;
@@ -936,8 +866,15 @@
     position: relative;
   }
   .project-card {
-    width: unset;
-    height: unset;
+      /* flex-basis: 50%; */
+  /* min-height: 20%; */
+  /* max-height: 3rem; */
+  border-radius: .15rem;
+  margin: unset;
+  /* margin-bottom: .5rem; */
+  position: relative;
+  width: unset;
+  height: unset;
   }
 
   }
