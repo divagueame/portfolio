@@ -453,10 +453,8 @@
 .project-card {
   border-radius: .15rem;
   height: 30vh;
-  /* width: 40vw; 
-   */
-   flex-basis: 85%;
-  margin: .1rem auto;
+  flex-basis: 85%;
+  margin: 1rem auto;
   margin-bottom: .5rem;
   overflow: hidden;
   background-size: cover;
@@ -464,6 +462,7 @@
   transition: 350ms transform ease-in-out;
   color: white;
   /* border: 21px solid wheat */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .project-card:last-child {
   margin-right: auto;
@@ -482,7 +481,9 @@
     hsl(0 0% 0% / 1)
   );
   padding-bottom: .5rem;
-  line-height: .85rem;
+  line-height: unset;
+  line-height: 1rem;
+  /* line-height: .85rem; */
 }
 
 .project-card-title {
@@ -491,8 +492,10 @@
   /* background-color: wheat; */
   max-width: 100%;
   font-size: 1rem;
-  margin-bottom: .23rem;
+  /* margin-bottom: 1.23rem; */
   font-weight: 700;
+  /* padding-bottom: .1rem; */
+  line-height: 1.2rem;
 }
 
 .project-card-title::after {
@@ -502,8 +505,7 @@
   width: calc(100% + var(--padding));
   left: calc(var(--padding)* -1);
   /* left: 0; */
-  bottom: -3px;
-  
+  bottom: -6px;
   background-color: white;
   transition: width 400ms ease-out;
 } 
@@ -513,6 +515,7 @@
   font-size: .65rem;
   margin-bottom: .5rem;
   line-height: .8rem;
+  padding-top: .5rem;
 }
 
 .project-card-btn {
@@ -854,7 +857,7 @@
   width: 0;
   left: calc(var(--padding)* -1);
   /* left: 0; */
-  bottom: -3px;
+  bottom: -.5rem;
   background-color: rgb(177, 177, 177);
   transition: width 400ms ease-out;
 }
@@ -865,7 +868,7 @@
   width: max-content;
   max-width: 100%;
   font-size: 1.5rem;
-  margin-bottom: .3rem;
+  margin-bottom: .53rem;
   font-weight: 700;
 }
 

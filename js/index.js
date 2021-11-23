@@ -5,7 +5,10 @@ if (viewportWidth>=768){
 //Offset the content by its size
 const projectCards = document.querySelectorAll('.project-card-content');
 projectCards.forEach(projectCard=>{
-  let cardsize = projectCard.offsetHeight - 55;
+  // let cardsize = projectCard.offsetHeight
+  let cardsize = 18 + projectCard.childNodes[3].scrollHeight + projectCard.childNodes[5].scrollHeight;
+  // console.log(projectCard.childNodes[3].scrollHeight)
+  console.log(projectCard)
   projectCard.style.transform = `translateY(${cardsize}px)`;
 })
 }
