@@ -153,12 +153,12 @@
 .container {
   scroll-snap-type: y proximity;
   overflow-y: scroll;
-  scroll-behavior: smooth; 
+  /* scroll-behavior: smooth;  */
   height: 100vh;
 }
   section {
     /* background-color: rgb(177, 145, 177); */
-    height: 100vh;
+    height: 100%;
     scroll-snap-align: start;
   }
 

@@ -22,7 +22,7 @@ const galleryRoomImgs = document.querySelectorAll('.gallery-room-img');
 
 galleryRoomImgs.forEach((img,i)=>{
   img.addEventListener('click', ()=>{
-    let newUrl = `portfolio/img/projects/room/${1+i}.jpg`;
+    let newUrl = `./portfolio/img/projects/room/${1+i}.jpg`;
     console.log(newUrl)
     galleryRoomMain.style.backgroundImage = `url(${newUrl})`;
   })
@@ -34,11 +34,11 @@ const projectCards = document.querySelectorAll('.project-card');
 const backBtnRoom =  document.getElementById('back-btn-room');
 const projectsContainerRoom =  document.getElementById('projects-container-room');
 backBtnRoom.addEventListener('click', ()=>{
-  projectsContainerRoom.classList.add('project-info-card-hidden');
+  
   projectCards.forEach((projectCard)=>{
     projectCard.classList.remove('project-info-card-hidden');
   })
-  
+  projectsContainerRoom.classList.add('project-info-card-hidden');
   
 });
 
