@@ -732,6 +732,40 @@
       height: 2rem;
       width: 2rem;
     }
+    .gallery-pic:hover {
+      transform: none; 
+    }
+    .gallery-bottom {
+      justify-content: center;
+ 
+    }
+    .project-info-card-body-right {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* background-color: blue; */
+      /* max-width: 100%; */
+    }
+    .project-info-card-body-right > p {
+      padding: 1rem 2rem;
+      max-width: 40ch;
+      margin: 0 auto;
+      text-justify: inter-word;
+      font-size: 1rem;
+      flex-basis: 100%;
+      flex-shrink: 0;
+    }
+    .project-info-card-body-right > .technologies-container {
+      flex-basis: 100%;
+      /* flex-shrink: 1; */
+      /* background-color: black; */
+      margin: 0 2rem;
+    }
+    .project-info-card-body-right > .project-info-buttons {
+      flex-basis: 100%;
+      margin: 1rem 2rem;
+    }
+
   }
 
   @media only screen and (min-width: 768px) {
