@@ -8,16 +8,16 @@ projectCards.forEach(projectCard=>{
   // let cardsize = projectCard.offsetHeight
   let cardsize = 18 + projectCard.childNodes[3].scrollHeight + projectCard.childNodes[5].scrollHeight;
   // console.log(projectCard.childNodes[3].scrollHeight)
-  console.log(projectCard)
+  // console.log(projectCard)
   projectCard.style.transform = `translateY(${cardsize}px)`;
 })
 }
 
 }
 
-window.addEventListener('resize', triggerResize);
-// window.addEventListener('onload', triggerResize);
+window.addEventListener('resize', triggerResize); 
 window.onload = triggerResize
+
 // ROOM
 //Update gallery items
 const galleryRoomMain =  document.getElementById('gallery-room-main');
