@@ -25,7 +25,7 @@ const galleryRoomImgs = document.querySelectorAll('.gallery-room-img');
 
 galleryRoomImgs.forEach((img,i)=>{
   img.addEventListener('click', ()=>{
-    let newUrl = `./img/projects/room/${1+i}.jpg`;
+    let newUrl = `../img/projects/room/${1+i}.jpg`;
     console.log(newUrl)
     galleryRoomMain.style.backgroundImage = `url(${newUrl})`;
   })
