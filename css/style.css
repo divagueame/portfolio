@@ -672,7 +672,7 @@
       top: 0rem;
       left: 0;
       right: 0;
-      z-index: 100; 
+      z-index: 0; 
       display: block;
       /* margin: 1rem; */
       /* display: grid; */
@@ -711,6 +711,26 @@
     }
     .project-info-card-body-left,.project-info-card-body-right {
       margin: unset
+    }
+    .gallery-container {
+      /* background-color: chartreuse; */
+      display: block;
+      padding: .5rem
+    }
+    .gallery-main {
+      height: 100vw;
+      width: 100%;
+      min-width: 3rem;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: .3rem;
+    }
+    .gallery-pic {
+      height: unset;
+      width: unset;
+      /* flex-basis: 20%; */
+      height: 2rem;
+      width: 2rem;
     }
   }
 
