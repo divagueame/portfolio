@@ -43,6 +43,7 @@ backBtnRoom.addEventListener('click', ()=>{
 // More info btn functionality
 const moreInfoBtn = document.getElementById('more-info-btn-room');
 moreInfoBtn.addEventListener('click', ()=>{
+  
   projectsContainerRoom.classList.remove('project-info-card-hidden');
   projectCards.forEach((projectCard)=>{
     projectCard.classList.add('project-info-card-hidden');

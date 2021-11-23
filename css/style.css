@@ -24,8 +24,7 @@
   font-weight: 500;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  /* color: white */
+  box-sizing: border-box; 
 }
   body, html {
     height: 100%;
@@ -35,8 +34,7 @@
     text-decoration: none;
     color: white;
   }
-  section {
-    /* display: none; */
+  section { 
     background-color: rgb(119, 119, 19);
   }
 
@@ -127,9 +125,7 @@
   }
 
   .menu ul {
-    position: absolute;
-    /* width: 100%; */
-    /* background-color: #e5b769; */
+    position: absolute; 
     top: 50%;
     left: 50%;
     text-align: center;
@@ -138,10 +134,8 @@
     transform: translate(-50%, -50%);
   }
 
-  .menu ul li {
-    /* padding: 2rem; */
-    margin-top: 2rem;
-    /* background-color: violet; */
+  .menu ul li { 
+    margin-top: 2rem; 
     border-bottom: 0px solid white;
   }
 
@@ -151,15 +145,15 @@
   }
 
 .container {
-  /* scroll-snap-type: y proximity; */
-  /* overflow-y: scroll; */
-  /* scroll-behavior: smooth;  */
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  scroll-behavior: smooth; 
   height: 100vh;
 }
   section {
     /* background-color: rgb(177, 145, 177); */
-    height: 100%;
-    /* scroll-snap-align: start; */
+    height: 100vh;
+    scroll-snap-align: start;
   }
 
   .page-front {
@@ -176,20 +170,71 @@
   .page-about {
     background-color: #626e38;
   }
+  /* SKILLS */
   .page-skills {
-    background-color: #626e38;
+    /* background-color: #626e38; */
+    display: block;
   }
 
+ 
+.skills-container {
+  display: flex;
+  /* background-color: #a6ff00; */
+  padding-top: 1rem;
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: flex-start; 
+}
+.skill {
+  flex-basis: 15%;
+  flex-shrink: 1;
+  flex-grow: 1;
+  
+  padding: .5rem;
+  /* height: 5rem; */
+  /* width: 100%; */
+}
+.skill > * {
+  margin: 0 auto;
+  
+  text-align: center;
+  font-weight: 600;
+}
+.skill-name {
+  background-color:  white;
+  color: black;
+  border-radius: .3rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.skill-logo {
+  height: 4rem;
+  width: 4rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: 50%;
+}
+
+  /* PROJECTS */
   .page-projects {
     background-color: #92998f;
     position: relative;
     height: unset;
   }
 
-  .page-projects > h1 { 
+  .page-about > h1,
+  .page-projects > h1,
+  .page-skills > h1 { 
     padding: .5rem;
     font-weight: 700;
     color: rgb(255, 255, 255); 
+    font-size: 1rem;
+    display: block;
+    padding-left: 2rem;
   }
 
 .projects-container {
@@ -406,6 +451,16 @@
 .technology-js {
   background-image: url('../img/tech/js.svg');
 }
+.technology-mysql {
+  background-image: url('../img/tech/mysqla.svg');
+}
+.technology-ruby {
+  background-image: url('../img/tech/ruby.svg');
+}
+.technology-firebase {
+  background-image: url('../img/tech/firebase.svg');
+}
+
 .project-info-buttons {
   display: flex;
   justify-content: space-between;
@@ -561,7 +616,7 @@
   .page-resume {
     background-color: #6d3d3d;
     /* height: 30vh; */
-    /* scroll-snap-align: center; */
+    scroll-snap-align: center;
   }
   .page-contact {
     background-color: #596392;
