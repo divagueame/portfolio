@@ -5,10 +5,7 @@ if (viewportWidth>=768){
 //Offset the content by its size
 const projectCards = document.querySelectorAll('.project-card-content');
 projectCards.forEach(projectCard=>{
-  // let cardsize = projectCard.offsetHeight
   let cardsize = 18 + projectCard.childNodes[3].scrollHeight + projectCard.childNodes[5].scrollHeight;
-  // console.log(projectCard.childNodes[3].scrollHeight)
-  // console.log(projectCard)
   projectCard.style.transform = `translateY(${cardsize}px)`;
 })
 }
@@ -31,15 +28,27 @@ galleryRoomImgs.forEach((img,i)=>{
   })
 })
 
+const projectCards = document.querySelectorAll('.project-card');
+
 //Arrow hide function
 const backBtnRoom =  document.getElementById('back-btn-room');
 const projectsContainerRoom =  document.getElementById('projects-container-room');
 backBtnRoom.addEventListener('click', ()=>{
   projectsContainerRoom.classList.add('project-info-card-hidden');
+  projectCards.forEach((projectCard)=>{
+    projectCard.classList.remove('project-info-card-hidden');
+  })
+  
+  
 });
 
 // More info btn functionality
 const moreInfoBtn = document.getElementById('more-info-btn-room');
 moreInfoBtn.addEventListener('click', ()=>{
   projectsContainerRoom.classList.remove('project-info-card-hidden');
+  projectCards.forEach((projectCard)=>{
+    projectCard.classList.add('project-info-card-hidden');
+  })
+  
+
 })

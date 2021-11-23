@@ -224,7 +224,7 @@
 }
  
 .project-info-card-hidden { 
-  display: none;
+  display: none !important;
 }
 .project-info-card-header {
   /* background-color: chartreuse; */
