@@ -183,6 +183,7 @@
   .page-projects {
     background-color: #92998f;
     position: relative;
+    height: unset;
   }
 
   .page-projects > h1 {
@@ -452,7 +453,9 @@
 .project-card {
   border-radius: .15rem;
   height: 30vh;
-  width: 40vw; 
+  /* width: 40vw; 
+   */
+   flex-basis: 85%;
   margin: .1rem auto;
   margin-bottom: .5rem;
   overflow: hidden;
@@ -467,7 +470,7 @@
 }
 
 .project-card-content {
-  --padding: .2rem;
+  --padding: .6rem;
   padding: var(--padding);
   bottom: 0;
   position: absolute;
@@ -479,6 +482,7 @@
     hsl(0 0% 0% / 1)
   );
   padding-bottom: .5rem;
+  line-height: .85rem;
 }
 
 .project-card-title {
@@ -513,12 +517,10 @@
 
 .project-card-btn {
   padding: .123rem .5rem;
-
   background-color: rgba(0, 255, 242, 0.281);
   color:rgb(255, 255, 255);
   /* box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 1px, #ffffff21 0px 0px 1px 1px; */
   border-radius: .4rem;
-  /* margin-bottom: 11.5rem; */
 }
 
 
@@ -867,5 +869,8 @@
   font-weight: 700;
 }
 
+.page-projects {
+  min-height: 100vh;
+}
 
 }
