@@ -23,23 +23,21 @@ const galleryRoomImgs = document.querySelectorAll('.gallery-room-img');
 galleryRoomImgs.forEach((img,i)=>{
   img.addEventListener('click', ()=>{
     let newUrl = `./img/projects/room/${1+i}.jpg`;
-    console.log(newUrl)
     galleryRoomMain.style.backgroundImage = `url(${newUrl})`;
   })
 })
 
-const projectCards = document.querySelectorAll('.project-card');
+
 
 //Arrow hide function
 const backBtnRoom =  document.getElementById('back-btn-room');
 const projectsContainerRoom =  document.getElementById('projects-container-room');
+const projectCards = document.querySelectorAll('.project-card');
 backBtnRoom.addEventListener('click', ()=>{
-  
   projectCards.forEach((projectCard)=>{
     projectCard.classList.remove('project-info-card-hidden');
   })
   projectsContainerRoom.classList.add('project-info-card-hidden');
-  
 });
 
 // More info btn functionality

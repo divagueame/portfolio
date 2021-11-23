@@ -151,8 +151,8 @@
   }
 
 .container {
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
+  /* scroll-snap-type: y proximity; */
+  /* overflow-y: scroll; */
   /* scroll-behavior: smooth;  */
   height: 100vh;
 }
