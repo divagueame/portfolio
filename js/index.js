@@ -1,11 +1,20 @@
+
+function triggerResize (){
+  let viewportWidth = window.innerWidth;
+if (viewportWidth>=768){
 //Offset the content by its size
 const projectCards = document.querySelectorAll('.project-card-content');
 projectCards.forEach(projectCard=>{
   let cardsize = projectCard.offsetHeight - 55;
   projectCard.style.transform = `translateY(${cardsize}px)`;
 })
+}
 
+}
 
+window.addEventListener('resize', triggerResize);
+// window.addEventListener('onload', triggerResize);
+window.onload = triggerResize
 // ROOM
 //Update gallery items
 const galleryRoomMain =  document.getElementById('gallery-room-main');
