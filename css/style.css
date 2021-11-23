@@ -159,7 +159,7 @@
   section {
     /* background-color: rgb(177, 145, 177); */
     height: 100%;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
   }
 
   .page-front {
@@ -561,7 +561,7 @@
   .page-resume {
     background-color: #6d3d3d;
     /* height: 30vh; */
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
   }
   .page-contact {
     background-color: #596392;
