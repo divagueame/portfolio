@@ -51,3 +51,29 @@ moreInfoBtn.addEventListener('click', ()=>{
   
 
 })
+
+
+
+setInterval(()=>{
+  const pageSkills = document.getElementById('page-skills');
+  const pageProjects = document.getElementById('page-projects');
+  const pageAbout = document.getElementById('page-about');
+  const docContainer = document.querySelector('.container');
+  
+  let currentPosition = docContainer.scrollTop;
+  let enterValue = 1.5*(pageSkills.offsetTop - pageAbout.offsetHeight);
+  let exitValue = 1.15*(pageProjects.offsetTop - pageAbout.offsetHeight)
+  console.log(exitValue,currentPosition)
+  // pageSkills.offsetTop - pageAbout.offsetHeight
+
+  // if(currentPosition-exitValue>=0){
+    // console.log('SALIMOS', currentPosition, exitValue)
+    document.querySelector('.skills-card-wrapper').classList.remove('skills-card-wrapper-shown')
+  // }
+  if(currentPosition-enterValue>=0&&currentPosition-exitValue<=0){
+    // console.log('LLEGAMOS', currentPosition, enterValue)
+    document.querySelector('.skills-card-wrapper').classList.add('skills-card-wrapper-shown')
+  }
+  // if (currentPosition-exitValue)
+  // console.log(pageSkills.offsetParent.offsetTop)
+},50)
