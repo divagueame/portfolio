@@ -26,32 +26,65 @@ galleryRoomImgs.forEach((img,i)=>{
     galleryRoomMain.style.backgroundImage = `url(${newUrl})`;
   })
 })
+// IP TRACKER
+//Update gallery items
+const galleryIptrackerMain =  document.getElementById('gallery-iptracker-main');
+const galleryIptrackerImgs = document.querySelectorAll('.gallery-iptracker-img');
 
-
-
-//Arrow hide function
-const backBtnRoom =  document.getElementById('back-btn-room');
-const projectsContainerRoom =  document.getElementById('projects-container-room');
-const projectCards = document.querySelectorAll('.project-card');
-backBtnRoom.addEventListener('click', ()=>{
-  projectCards.forEach((projectCard)=>{
-    projectCard.classList.remove('project-info-card-hidden');
+galleryIptrackerImgs.forEach((img,i)=>{
+  img.addEventListener('click', ()=>{
+    let newUrl = `./img/projects/iptracker/${1+i}.jpg`;
+    galleryIptrackerMain.style.backgroundImage = `url(${newUrl})`;
   })
-  projectsContainerRoom.classList.add('project-info-card-hidden');
-});
-
-// More info btn functionality
-const moreInfoBtn = document.getElementById('more-info-btn-room');
-moreInfoBtn.addEventListener('click', ()=>{
-  
-  projectsContainerRoom.classList.remove('project-info-card-hidden');
-  projectCards.forEach((projectCard)=>{
-    projectCard.classList.add('project-info-card-hidden');
-  })
-  
-
 })
 
+// DICE 
+const galleryDiceMain =  document.getElementById('gallery-dice-main');
+const galleryDiceImgs = document.querySelectorAll('.gallery-dice-img');
+
+galleryDiceImgs.forEach((img,i)=>{
+  img.addEventListener('click', ()=>{
+    let newUrl = `./img/projects/dice/${1+i}.jpg`;
+    galleryDiceMain.style.backgroundImage = `url(${newUrl})`;
+  })
+})
+
+
+// CHESS 
+const galleryChessMain =  document.getElementById('gallery-chess-main');
+const galleryChessImgs = document.querySelectorAll('.gallery-chess-img');
+
+galleryChessImgs.forEach((img,i)=>{
+  img.addEventListener('click', ()=>{
+    let newUrl = `./img/projects/chess/${1+i}.jpg`;
+    galleryChessMain.style.backgroundImage = `url(${newUrl})`;
+  })
+})
+
+
+// STINGY 
+const galleryStingyMain =  document.getElementById('gallery-stingy-main');
+const galleryStingyImgs = document.querySelectorAll('.gallery-stingy-img');
+
+galleryStingyImgs.forEach((img,i)=>{
+  img.addEventListener('click', ()=>{
+    let newUrl = `./img/projects/stingy/${1+i}.jpg`;
+    galleryStingyMain.style.backgroundImage = `url(${newUrl})`;
+  })
+})
+
+// PALABRAS 
+const galleryPalabrasMain =  document.getElementById('gallery-palabras-main');
+const galleryPalabrasImgs = document.querySelectorAll('.gallery-palabras-img');
+
+galleryPalabrasImgs.forEach((img,i)=>{
+  img.addEventListener('click', ()=>{
+    let newUrl = `./img/projects/palabras/${1+i}.jpg`;
+    galleryPalabrasMain.style.backgroundImage = `url(${newUrl})`;
+  })
+})
+
+ 
 
 
 setInterval(()=>{
@@ -61,9 +94,9 @@ setInterval(()=>{
   const docContainer = document.querySelector('.container');
   
   let currentPosition = docContainer.scrollTop;
-  let enterValue = 1.5*(pageSkills.offsetTop - pageAbout.offsetHeight);
-  let exitValue = 1.15*(pageProjects.offsetTop - pageAbout.offsetHeight)
-  console.log(exitValue,currentPosition)
+  let enterValue = 1.6*(pageSkills.offsetTop - pageAbout.offsetHeight);
+  let exitValue = 1.08*(pageProjects.offsetTop - pageAbout.offsetHeight)
+  // console.log(enterValue,exitValue)
   // pageSkills.offsetTop - pageAbout.offsetHeight
 
   // if(currentPosition-exitValue>=0){
