@@ -1,4 +1,22 @@
-
+document.querySelector('.container').addEventListener(
+  "scroll",
+  () => {
+    const pageSkills = document.getElementById('page-skills');
+    const pageProjects = document.getElementById('page-projects');
+    const pageAbout = document.getElementById('page-about');
+    const docContainer = document.querySelector('.container');
+    
+    let currentPosition = docContainer.scrollTop;
+    let enterValue = 1.6*(pageSkills.offsetTop - pageAbout.offsetHeight);
+    let exitValue = 1.08*(pageProjects.offsetTop - pageAbout.offsetHeight)
+   
+      document.querySelector('.skills-card-wrapper').classList.remove('skills-card-wrapper-shown')
+   
+    if(currentPosition-enterValue>=0&&currentPosition-exitValue<=0){ 
+      document.querySelector('.skills-card-wrapper').classList.add('skills-card-wrapper-shown')
+    } 
+  })
+ 
 function triggerResize (){
   let viewportWidth = window.innerWidth;
 if (viewportWidth>=768){
@@ -53,7 +71,6 @@ galleryDiceImgs.forEach((img,i)=>{
 // CHESS 
 const galleryChessMain =  document.getElementById('gallery-chess-main');
 const galleryChessImgs = document.querySelectorAll('.gallery-chess-img');
-
 galleryChessImgs.forEach((img,i)=>{
   img.addEventListener('click', ()=>{
     let newUrl = `./img/projects/chess/${1+i}.jpg`;
@@ -65,7 +82,6 @@ galleryChessImgs.forEach((img,i)=>{
 // STINGY 
 const galleryStingyMain =  document.getElementById('gallery-stingy-main');
 const galleryStingyImgs = document.querySelectorAll('.gallery-stingy-img');
-
 galleryStingyImgs.forEach((img,i)=>{
   img.addEventListener('click', ()=>{
     let newUrl = `./img/projects/stingy/${1+i}.jpg`;
@@ -76,7 +92,6 @@ galleryStingyImgs.forEach((img,i)=>{
 // PALABRAS 
 const galleryPalabrasMain =  document.getElementById('gallery-palabras-main');
 const galleryPalabrasImgs = document.querySelectorAll('.gallery-palabras-img');
-
 galleryPalabrasImgs.forEach((img,i)=>{
   img.addEventListener('click', ()=>{
     let newUrl = `./img/projects/palabras/${1+i}.jpg`;
@@ -86,27 +101,32 @@ galleryPalabrasImgs.forEach((img,i)=>{
 
  
 
+// MENU HIDE AFTER CLICK
+const menuItem = document.querySelectorAll('.menu-item');
+menuItem.forEach(item=>{
+  item.addEventListener('click',()=>{ 
+    const active = document.getElementById('active');
+    active.checked = false;
+  })
+})
 
-setInterval(()=>{
-  const pageSkills = document.getElementById('page-skills');
-  const pageProjects = document.getElementById('page-projects');
-  const pageAbout = document.getElementById('page-about');
-  const docContainer = document.querySelector('.container');
+
+// setInterval(()=>{
+//   const pageSkills = document.getElementById('page-skills');
+//   const pageProjects = document.getElementById('page-projects');
+//   const pageAbout = document.getElementById('page-about');
+//   const docContainer = document.querySelector('.container');
   
-  let currentPosition = docContainer.scrollTop;
-  let enterValue = 1.6*(pageSkills.offsetTop - pageAbout.offsetHeight);
-  let exitValue = 1.08*(pageProjects.offsetTop - pageAbout.offsetHeight)
-  // console.log(enterValue,exitValue)
-  // pageSkills.offsetTop - pageAbout.offsetHeight
+//   let currentPosition = docContainer.scrollTop;
+//   let enterValue = 1.6*(pageSkills.offsetTop - pageAbout.offsetHeight);
+//   let exitValue = 1.08*(pageProjects.offsetTop - pageAbout.offsetHeight)
+ 
+//     document.querySelector('.skills-card-wrapper').classList.remove('skills-card-wrapper-shown')
+ 
+//   if(currentPosition-enterValue>=0&&currentPosition-exitValue<=0){ 
+//     document.querySelector('.skills-card-wrapper').classList.add('skills-card-wrapper-shown')
+//   } 
+// },50)
 
-  // if(currentPosition-exitValue>=0){
-    // console.log('SALIMOS', currentPosition, exitValue)
-    document.querySelector('.skills-card-wrapper').classList.remove('skills-card-wrapper-shown')
-  // }
-  if(currentPosition-enterValue>=0&&currentPosition-exitValue<=0){
-    // console.log('LLEGAMOS', currentPosition, enterValue)
-    document.querySelector('.skills-card-wrapper').classList.add('skills-card-wrapper-shown')
-  }
-  // if (currentPosition-exitValue)
-  // console.log(pageSkills.offsetParent.offsetTop)
-},50)
+
+// set Alt for images
