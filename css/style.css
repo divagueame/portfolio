@@ -154,7 +154,8 @@
 .container {
   scroll-snap-type: y proximity;
   overflow-y: scroll;
-  scroll-behavior: smooth; 
+  overflow-x: hidden;
+  /* scroll-behavior: smooth;  */
   height: 100vh;
 }
   section {
@@ -162,6 +163,7 @@
     height: 100vh;
     scroll-snap-align: start;
     /* z-index: 0; */
+
   }
 
   .page-front {
@@ -265,7 +267,27 @@
     filter: blur(.3rem);
     -webkit-filter: blur(.9rem); 
   }
-
+  .arrow-wrapper {
+    background-color:white;
+    border: 2px solid var(--main-light);
+    width: 5rem;
+    height: 5rem; 
+    margin-top: 5rem;
+    border-radius: 100%;
+    padding: 2rem;
+    transform: scale(1); 
+    animation: pulse 950ms infinite;
+  }
+  .arrow {
+    /* background-color: yellow; */
+    background-image: url('/img/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
   /* FIRST SPACER */
   .divider1 {
     position: absolute;
@@ -405,7 +427,7 @@
   .page-skills > h1 {
     color: white;
   }
-  .page-projects > h1,.page-contact > h1 {
+  .page-projects > h1,.page-contact > h1, .page-resume > h1 {
     color: var(--main);
   }
   .project {
@@ -818,28 +840,34 @@
 
     /* height: 30vh; */
     position: relative;
-    /* scroll-snap-align: center; */
+    scroll-snap-align: center;
     /* display: flex; */
-    /* justify-content: center; */
+    justify-content: center;
 
   } 
 .page-resume-container {
   /* background-color: violet; */
-  /* background-image: url('/img/bg/blob-fill.svg');
-  aspect-ratio: 900/675;
-  position: inherit; */
+  /* background-image: url('/img/bg/blob-fill.svg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 900/675; */
+  position: inherit; 
   width: 100%;
   height: 100%;
+  /* padding: 50% 2rem */
+}
+.resume-btn-wrapper {
+  margin: 10% 30%
 }
 /* FRONT */
 .page-front h1 {
   background-color: white;
   border-radius: 3px;
   color:rgb(85, 85, 85);
-  padding: .96rem;
+  padding: 3rem;
   width: 70%;
   max-width: 45ch;
-  font-size: 1rem;
+  font-size: 1.4rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
  
@@ -1064,7 +1092,7 @@
   }
 
   
-  .page-projects > h1, .page-contact > h1 {
+  .page-projects > h1, .page-contact > h1, .page-resume > h1 {
       margin: 0;
       padding-left: 2rem;
       /* background-color: rgb(204, 53, 53); */
@@ -1236,7 +1264,8 @@
   .page-about > h1,
   .page-skills > h1,
   .page-projects > h1, 
-  .page-contact > h1 {
+  .page-contact > h1,
+  .page-resume > h1 {
     font-size: 3rem;
     font-weight: 300;
     /* position: absolute; */
@@ -1449,6 +1478,9 @@ transition: .5s ease-in-out transform, 0.3s ease-in-out box-shadow;
   .contact-container {
     margin-top: 50%;
   }
- 
+  .page-front h1 {
+    padding: 1.5rem
+  }
+
  
 }
