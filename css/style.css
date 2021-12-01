@@ -857,7 +857,7 @@
   /* padding: 50% 2rem */
 }
 .resume-btn-wrapper {
-  margin: 10% 30%
+  margin: 30vh 10%
 }
 /* FRONT */
 .page-front h1 {
@@ -1382,6 +1382,7 @@
   /* background-color: violet; */
   flex-grow: 0;
   display: flex;
+  justify-content: space-between;
   gap: .5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1459,7 +1460,9 @@ transition: .5s ease-in-out transform, 0.3s ease-in-out box-shadow;
   margin-bottom: 1rem;
   /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
 }
-
+.resume-btn-wrapper {
+  margin: 30vh 40%
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -1481,6 +1484,13 @@ transition: .5s ease-in-out transform, 0.3s ease-in-out box-shadow;
   .page-front h1 {
     padding: 1.5rem
   }
-
- 
+.gallery-main {
+  background-size: contain; 
+  height: 50vh;
+  width: 100%;
+  min-width: 3rem;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: .3rem;
+}
 }
