@@ -814,14 +814,22 @@
 }
  
   .page-resume {
-    /* background-color: #6d3d3d; */
+
     /* height: 30vh; */
     position: relative;
     /* scroll-snap-align: center; */
-    display: flex;
-    justify-content: center;
-  } 
+    /* display: flex; */
+    /* justify-content: center; */
 
+  } 
+.page-resume-container {
+  /* background-color: violet; */
+  /* background-image: url('/img/bg/blob-fill.svg');
+  aspect-ratio: 900/675;
+  position: inherit; */
+  width: 100%;
+  height: 100%;
+}
 /* FRONT */
 .page-front h1 {
   background-color: white;
@@ -890,6 +898,7 @@
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
+
 }
 
 
@@ -1439,4 +1448,6 @@ transition: .5s ease-in-out transform, 0.3s ease-in-out box-shadow;
   .contact-container {
     margin-top: 50%;
   }
+ 
+ 
 }
