@@ -1,37 +1,37 @@
-document.querySelector('.container').addEventListener(
-  "scroll",
-  () => {
-    const pageSkills = document.getElementById('page-skills');
-    const pageProjects = document.getElementById('page-projects');
-    const pageAbout = document.getElementById('page-about');
-    const docContainer = document.querySelector('.container');
+// document.querySelector('.container').addEventListener(
+//   "scroll",
+//   () => {
+//     const pageSkills = document.getElementById('page-skills');
+//     const pageProjects = document.getElementById('page-projects');
+//     const pageAbout = document.getElementById('page-about');
+//     const docContainer = document.querySelector('.container');
     
-    let currentPosition = docContainer.scrollTop;
-    let enterValue = 1.6*(pageSkills.offsetTop - pageAbout.offsetHeight);
-    let exitValue = 1.08*(pageProjects.offsetTop - pageAbout.offsetHeight)
+//     let currentPosition = docContainer.scrollTop;
+//     let enterValue = 1.6*(pageSkills.offsetTop - pageAbout.offsetHeight);
+//     let exitValue = 1.08*(pageProjects.offsetTop - pageAbout.offsetHeight)
    
-      document.querySelector('.skills-card-wrapper').classList.remove('skills-card-wrapper-shown')
+//       document.querySelector('.skills-card-wrapper').classList.remove('skills-card-wrapper-shown')
    
-    if(currentPosition-enterValue>=0&&currentPosition-exitValue<=0){ 
-      document.querySelector('.skills-card-wrapper').classList.add('skills-card-wrapper-shown')
-    } 
-  })
+//     if(currentPosition-enterValue>=0&&currentPosition-exitValue<=0){ 
+//       document.querySelector('.skills-card-wrapper').classList.add('skills-card-wrapper-shown')
+//     } 
+//   })
  
-function triggerResize (){
-  let viewportWidth = window.innerWidth;
-if (viewportWidth>=768){
-//Offset the content by its size
-const projectCards = document.querySelectorAll('.project-card-content');
-projectCards.forEach(projectCard=>{
-  let cardsize = 18 + projectCard.childNodes[3].scrollHeight + projectCard.childNodes[5].scrollHeight;
-  projectCard.style.transform = `translateY(${cardsize}px)`;
-})
-}
+// function triggerResize (){
+//   let viewportWidth = window.innerWidth;
+// if (viewportWidth>=768){
+// //Offset the content by its size
+// const projectCards = document.querySelectorAll('.project-card-content');
+// projectCards.forEach(projectCard=>{
+//   let cardsize = 18 + projectCard.childNodes[3].scrollHeight + projectCard.childNodes[5].scrollHeight;
+//   projectCard.style.transform = `translateY(${cardsize}px)`;
+// })
+// }
 
-}
+// }
 
-window.addEventListener('resize', triggerResize); 
-window.onload = triggerResize
+// window.addEventListener('resize', triggerResize); 
+// window.onload = triggerResize
 
 // ROOM
 //Update gallery items
