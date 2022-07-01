@@ -1570,3 +1570,25 @@ transition: .5s ease-in-out transform, 0.3s ease-in-out box-shadow;
   .content h3 {
     text-decoration: underline;
   }
+
+
+    @media only screen and (max-width: 768px) {
+
+      .float-card {
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 5vh;
+        font-size: 13px;
+        transform: translateX(0%);
+      }
+      .content {
+        padding: 10px;
+      }
+      .float-card  .new {
+        font-size: 14px !important;
+        padding: 3px;
+        letter-spacing: 1px;
+      }
+  
+    }
